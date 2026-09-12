@@ -2,7 +2,7 @@
   "applinks": {
     "details": [
       {
-        "appIDs": ["<APPLE_TEAM_ID>.<BUNDLE_ID>"],
+        "appIDs": <APPLE_APPIDS>,
         "components": [
           {
             "path": "/r/*",

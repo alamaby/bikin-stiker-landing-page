@@ -37,8 +37,10 @@ Ensure only source files are committed; generated outputs and environment-specif
   - [x] `git check-ignore -v *.well-known/apple-app-site-association assetlinks.json` → ter-ignore
 
 ## Risks
-- Fail-fast bisa memutuskan deploy lokal dev bila env belum ter-set; migrasi `prebuild` di `package.json` sudah benar urutannya sehingga error muncul sebelum `next build`.
-- Template `.well-known/*.in` memerlukan `public/` tetap serve di Next.js; artefak generated muncul saat runtime lokal tapi diignore.
+- Fail-fast pada `vercel.json` (SUPABASE_PROJECT_REF) dapat memutus deploy bila env belum diset.
+- Apple env (`APPLE_TEAM_ID`, `APPLE_BUNDLE_ID`) opsional — karena aplikasi fokus Android dan Apple Developer belum ada. AASA generate dengan `appIDs: []` bila kosong, tetap valid.
+- Android env (`ANDROID_SHA256_FINGERPRINT`) tetap hard-required untuk menghindari assetlinks palsu.
 
 ## Progress Log
 - 2026-09-12 — Build Mode: harden `.gitignore`, template `.well-known`, fail-fast `vercel.json`, verifikasi `git check-ignore`.
+- 2026-09-12 — Vercel deploy error: `APPLE_TEAM_ID` required sebelumnya, padahal Apple Developer belum ada. Koreksi: Apple opsional (appIDs: [] bila kosong), Android tetap hard-required.

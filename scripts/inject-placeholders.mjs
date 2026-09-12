@@ -2,7 +2,9 @@
 /**
  * inject-placeholders.mjs
  * Prebuild script: fills .well-known templates (*.in) with real env values.
- * Aborts build if any <PLACEHOLDER> remains unsubstituted.
+ * Hard-fail only for Android (production app). Apple placeholders are optional
+ * until an Apple Developer account is provisioned — empty appIDs array keeps
+ * the AASA valid for iOS apps that are not yet published.
  */
 
 import { readFileSync, writeFileSync } from "fs";
@@ -10,12 +12,12 @@ import { resolve } from "path";
 
 const ROOT = resolve(process.cwd());
 
-function substitute(srcPath, dstPath, substitutions) {
+function substitute(srcPath, dstPath, subs) {
   const content = readFileSync(srcPath, "utf-8");
   let next = content;
 
-  for (const [placeholder, value] of Object.entries(substitutions)) {
-    if (next.includes(placeholder) && !value) {
+  for (const [placeholder, { value, required }] of Object.entries(subs)) {
+    if (next.includes(placeholder) && !value && required) {
       console.error(
         `[inject-placeholders] ERROR: env var required for ${placeholder} (source: ${srcPath})`
       );
@@ -37,17 +39,26 @@ function substitute(srcPath, dstPath, substitutions) {
 }
 
 // .well-known templates (.in) -> generated output (ignored)
+const appleTeamId = process.env.APPLE_TEAM_ID ?? "";
+const appleBundleId = process.env.APPLE_BUNDLE_ID ?? "";
+const appleAppIds =
+  appleTeamId && appleBundleId
+    ? JSON.stringify([`${appleTeamId}.${appleBundleId}`])
+    : "[]";
+
 const aasaSrc = resolve(ROOT, "public/.well-known/apple-app-site-association.in");
 const aasaDst = resolve(ROOT, "public/.well-known/apple-app-site-association");
 substitute(aasaSrc, aasaDst, {
-  "<APPLE_TEAM_ID>": process.env.APPLE_TEAM_ID ?? "",
-  "<BUNDLE_ID>": process.env.APPLE_BUNDLE_ID ?? "com.alamaby.bikin_stiker",
+  "<APPLE_APPIDS>": { value: appleAppIds, required: false },
 });
 
 const assetlinksSrc = resolve(ROOT, "public/.well-known/assetlinks.json.in");
 const assetlinksDst = resolve(ROOT, "public/.well-known/assetlinks.json");
 substitute(assetlinksSrc, assetlinksDst, {
-  "<ANDROID_SHA256_FINGERPRINT>": process.env.ANDROID_SHA256_FINGERPRINT ?? "",
+  "<ANDROID_SHA256_FINGERPRINT>": {
+    value: process.env.ANDROID_SHA256_FINGERPRINT ?? "",
+    required: true,
+  },
 });
 
 console.log("[inject-placeholders] All placeholders resolved.");
