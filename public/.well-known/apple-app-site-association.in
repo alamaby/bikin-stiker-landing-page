@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["<APPLE_TEAM_ID>.<BUNDLE_ID>"],
+        "components": [
+          {
+            "path": "/r/*",
+            "comment": "Share redirect short links"
+          },
+          {
+            "path": "/share-claimed/*",
+            "comment": "Share claimed callback"
+          }
+        ],
+        "default": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "pricing": "Harga",
+    "faq": "FAQ",
+    "privacy": "Privasi",
+    "terms": "Ketentuan"
+  },
+  "hero": {
+    "headline": "Ubah Ide Menjadi Stiker dalam Detik",
+    "subheadline": "Buat stiker unik bertenaga AI dari prompt teks. Bagikan di mana saja, kumpulkan reward, dan ekspresikan dirimu.",
+    "cta": "Unduh Gratis",
+    "ctaSecondary": "Lihat Contoh"
+  },
+  "features": {
+    "title": "Semua yang Anda Butuhkan",
+    "subtitle": "Fitur lengkap untuk membuat dan membagikan stiker luar biasa",
+    "aiGeneration": {
+      "title": "Kreasi Bertenaga AI",
+      "description": "Jelaskan apa yang Anda inginkan, dan AI kami menghasilkan stiker unik dalam hitungan detik."
+    },
+    "instantShare": {
+      "title": "Berbagi Instan",
+      "description": "Bagikan stiker langsung ke WhatsApp, Instagram, Telegram, dan lainnya."
+    },
+    "rewards": {
+      "title": "Dapatkan Reward",
+      "description": "Selesaikan misi harian untuk mendapatkan kredit dan membuka fitur premium."
+    },
+    "collections": {
+      "title": "Atur Koleksi",
+      "description": "Buat dan kelola paket stiker tanpa batas sesuai keinginan Anda."
+    },
+    "highQuality": {
+      "title": "Kualitas HD",
+      "description": "Semua stiker dihasilkan dalam resolusi tinggi, sempurna untuk platform mana pun."
+    },
+    "offlineAccess": {
+      "title": "Berfungsi Offline",
+      "description": "Paket stiker Anda disimpan secara lokal untuk akses offline kapan saja."
+    }
+  },
+  "howItWorks": {
+    "title": "Cara Kerja",
+    "subtitle": "Buat stiker pertama Anda dalam 3 langkah mudah",
+    "step1": {
+      "title": "Deskripsikan Stiker Anda",
+      "description": "Ketik prompt seperti 'kucing imut pakai kacamata hitam' dan biarkan AI bekerja."
+    },
+    "step2": {
+      "title": "Pratinjau & Kustomisasi",
+      "description": "Tinjau stiker yang dihasilkan dan buat penyesuaian jika diperlukan."
+    },
+    "step3": {
+      "title": "Berbagi di Mana Saja",
+      "description": "Unduh atau bagikan langsung ke aplikasi pesan favorit Anda."
+    }
+  },
+  "showcase": {
+    "title": "Dibuat dengan BikinStiker",
+    "subtitle": "Lihat apa yang komunitas kami buat"
+  },
+  "cta": {
+    "title": "Siap Membuat?",
+    "subtitle": "Bergabunglah dengan ribuan pengguna yang membuat stiker luar biasa setiap hari.",
+    "button": "Mulai Gratis"
+  },
+  "pricing": {
+    "title": "Harga Sederhana & Transparan",
+    "subtitle": "Mulai gratis, upgrade saat Anda butuh lebih",
+    "free": {
+      "name": "Gratis",
+      "price": "Rp 0",
+      "period": "selamanya",
+      "description": "Sempurna untuk memulai",
+      "feature1": "20 kredit per bulan",
+      "feature2": "5 paket stiker",
+      "feature3": "Model AI dasar",
+      "feature4": "Kualitas standar",
+      "cta": "Mulai Sekarang"
+    },
+    "plus": {
+      "name": "Plus",
+      "price": "Rp 45.000",
+      "period": "per bulan",
+      "description": "Untuk pengguna aktif",
+      "feature1": "100 kredit per bulan",
+      "feature2": "Paket tanpa batas",
+      "feature3": "Model AI premium",
+      "feature4": "Unduhan kualitas HD",
+      "popular": "Paling Populer",
+      "cta": "Upgrade Sekarang"
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "Rp 90.000",
+      "period": "per bulan",
+      "description": "Untuk kreator & bisnis",
+      "feature1": "300 kredit per bulan",
+      "feature2": "Paket tanpa batas",
+      "feature3": "Generasi AI prioritas",
+      "feature4": "Kualitas 4K + akses API",
+      "cta": "Pilih Pro"
+    }
+  },
+  "footer": {
+    "tagline": "Stiker bertenaga AI, dibuat simpel.",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Ketentuan Layanan",
+    "faq": "FAQ",
+    "copyright": "© 2026 BikinStiker. Hak cipta dilindungi."
+  },
+  "shareClaimed": {
+    "title": "Stiker Dibagikan!",
+    "success": "Anda mendapatkan {credits} kredit!",
+    "openApp": "Buka BikinStiker untuk Klaim",
+    "downloadIOS": "Unduh untuk iOS",
+    "downloadAndroid": "Unduh untuk Android",
+    "error": "Terjadi kesalahan. Silakan coba lagi."
+  },
+  "faq": {
+    "title": "Pertanyaan Umum",
+    "subtitle": "Semua yang perlu Anda ketahui tentang BikinStiker",
+    "q1": "Apa itu BikinStiker?",
+    "a1": "BikinStiker adalah aplikasi berbasis AI yang memungkinkan Anda membuat stiker kustom dari prompt teks. Jelaskan apa yang Anda inginkan, dan AI kami akan menghasilkan stiker unik yang dapat Anda bagikan ke mana saja.",
+    "q2": "Berapa biayanya?",
+    "a2": "BikinStiker memiliki paket gratis dengan 20 kredit per bulan. Kami juga menawarkan paket Plus (Rp 45.000/bulan) dan Pro (Rp 90.000/bulan) dengan lebih banyak kredit dan fitur premium.",
+    "q3": "Bagaimana cara mendapatkan kredit?",
+    "a3": "Anda mendapatkan kredit dengan menyelesaikan misi harian seperti membagikan aplikasi, membuat stiker, dan menjaga streaks. Anda juga bisa mendapatkan bonus kredit saat teman menggunakan tautan referral Anda.",
+    "q4": "Bisakah saya menggunakan stiker secara offline?",
+    "a4": "Ya! Paket stiker Anda disimpan secara lokal di perangkat Anda, sehingga Anda dapat mengakses dan menggunakannya bahkan tanpa koneksi internet.",
+    "q5": "Apakah data saya bersifat pribadi?",
+    "a5": "Prompt dan stiker yang dihasilkan diproses secara aman. Kami tidak menjual data pribadi Anda. Lihat Kebijakan Privasi kami untuk detail lengkap.",
+    "q6": "Bagaimana cara upgrade atau membatalkan?",
+    "a6": "Anda dapat mengelola langganan melalui aplikasi atau akun toko aplikasi Anda. Perubahan berlaku di akhir periode penagihan saat ini."
+  },
+  "privacy": {
+    "title": "Kebijakan Privasi",
+    "lastUpdated": "Terakhir diperbarui: Juli 2026"
+  },
+  "terms": {
+    "title": "Ketentuan Layanan",
+    "lastUpdated": "Terakhir diperbarui: Juli 2026"
+  }
+}

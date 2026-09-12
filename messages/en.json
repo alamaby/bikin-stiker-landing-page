@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "Home",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "hero": {
+    "headline": "Turn Your Ideas Into Stickers in Seconds",
+    "subheadline": "Create unique, AI-powered stickers from text prompts. Share them anywhere, collect rewards, and express yourself like never before.",
+    "cta": "Download Free",
+    "ctaSecondary": "See Examples"
+  },
+  "features": {
+    "title": "Everything You Need",
+    "subtitle": "Powerful features to create and share amazing stickers",
+    "aiGeneration": {
+      "title": "AI-Powered Creation",
+      "description": "Describe what you want, and our AI generates unique stickers in seconds."
+    },
+    "instantShare": {
+      "title": "Instant Sharing",
+      "description": "Share stickers directly to WhatsApp, Instagram, Telegram, and more."
+    },
+    "rewards": {
+      "title": "Earn Rewards",
+      "description": "Complete daily missions to earn credits and unlock premium features."
+    },
+    "collections": {
+      "title": "Organize Collections",
+      "description": "Create and manage unlimited sticker packs organized your way."
+    },
+    "highQuality": {
+      "title": "HD Quality",
+      "description": "All stickers are generated in high resolution, perfect for any platform."
+    },
+    "offlineAccess": {
+      "title": "Works Offline",
+      "description": "Your sticker packs are saved locally for offline access anytime."
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Create your first sticker in 3 easy steps",
+    "step1": {
+      "title": "Describe Your Sticker",
+      "description": "Type a prompt like 'cute cat wearing sunglasses' and let AI do the magic."
+    },
+    "step2": {
+      "title": "Preview & Customize",
+      "description": "Review your generated sticker and make adjustments if needed."
+    },
+    "step3": {
+      "title": "Share Anywhere",
+      "description": "Download or share directly to your favorite messaging apps."
+    }
+  },
+  "showcase": {
+    "title": "Made with BikinStiker",
+    "subtitle": "See what our community is creating"
+  },
+  "cta": {
+    "title": "Ready to Create?",
+    "subtitle": "Join thousands of users creating amazing stickers every day.",
+    "button": "Get Started Free"
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Start free, upgrade when you need more",
+    "free": {
+      "name": "Free",
+      "price": "$0",
+      "period": "forever",
+      "description": "Perfect for getting started",
+      "feature1": "20 credits per month",
+      "feature2": "5 sticker packs",
+      "feature3": "Basic AI models",
+      "feature4": "Standard quality",
+      "cta": "Get Started"
+    },
+    "plus": {
+      "name": "Plus",
+      "price": "$2.99",
+      "period": "per month",
+      "description": "For power users",
+      "feature1": "100 credits per month",
+      "feature2": "Unlimited packs",
+      "feature3": "Premium AI models",
+      "feature4": "HD quality downloads",
+      "popular": "Most Popular",
+      "cta": "Upgrade Now"
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "$5.99",
+      "period": "per month",
+      "description": "For creators and businesses",
+      "feature1": "300 credits per month",
+      "feature2": "Unlimited packs",
+      "feature3": "Priority AI generation",
+      "feature4": "4K quality + API access",
+      "cta": "Go Pro"
+    }
+  },
+  "footer": {
+    "tagline": "AI-powered stickers, made simple.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "faq": "FAQ",
+    "copyright": "© 2026 BikinStiker. All rights reserved."
+  },
+  "shareClaimed": {
+    "title": "Sticker Shared!",
+    "success": "You've earned {credits} credits!",
+    "openApp": "Open BikinStiker to Claim",
+    "downloadIOS": "Download for iOS",
+    "downloadAndroid": "Download for Android",
+    "error": "Something went wrong. Please try again."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about BikinStiker",
+    "q1": "What is BikinStiker?",
+    "a1": "BikinStiker is an AI-powered app that lets you create custom stickers from text prompts. Describe what you want, and our AI generates unique stickers you can share anywhere.",
+    "q2": "How much does it cost?",
+    "a2": "BikinStiker has a free tier with 20 credits per month. We also offer Plus ($2.99/month) and Pro ($5.99/month) plans with more credits and premium features.",
+    "q3": "How do I earn credits?",
+    "a3": "You earn credits by completing daily missions like sharing the app, generating stickers, and maintaining your streak. You can also earn bonus credits when friends use your referral link.",
+    "q4": "Can I use stickers offline?",
+    "a4": "Yes! Your sticker packs are stored locally on your device, so you can access and use them even without an internet connection.",
+    "q5": "Is my data private?",
+    "a5": "Your prompts and generated stickers are processed securely. We do not sell your personal data. See our Privacy Policy for full details.",
+    "q6": "How do I upgrade or cancel?",
+    "a6": "You can manage your subscription through the app or your app store account. Changes take effect at the end of your current billing period."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: July 2026"
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: July 2026"
+  }
+}

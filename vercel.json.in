@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/r/:token",
+      "destination": "https://__SUPABASE_PROJECT_REF__.supabase.co/functions/v1/share-redirect?token=:token",
+      "statusCode": 302
+    }
+  ]
+}
