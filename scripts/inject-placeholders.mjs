@@ -2,9 +2,9 @@
 /**
  * inject-placeholders.mjs
  * Prebuild script: fills .well-known templates (*.in) with real env values.
- * Hard-fail only for Android (production app). Apple placeholders are optional
- * until an Apple Developer account is provisioned — empty appIDs array keeps
- * the AASA valid for iOS apps that are not yet published.
+ * Apple placeholders are optional until an Apple Developer account is
+ * provisioned — empty appIDs array keeps the AASA valid for iOS apps that
+ * are not yet published.
  */
 
 import { readFileSync, writeFileSync } from "fs";
@@ -50,15 +50,6 @@ const aasaSrc = resolve(ROOT, "public/.well-known/apple-app-site-association.in"
 const aasaDst = resolve(ROOT, "public/.well-known/apple-app-site-association");
 substitute(aasaSrc, aasaDst, {
   "<APPLE_APPIDS>": { value: appleAppIds, required: false },
-});
-
-const assetlinksSrc = resolve(ROOT, "public/.well-known/assetlinks.json.in");
-const assetlinksDst = resolve(ROOT, "public/.well-known/assetlinks.json");
-substitute(assetlinksSrc, assetlinksDst, {
-  "<ANDROID_SHA256_FINGERPRINT>": {
-    value: process.env.ANDROID_SHA256_FINGERPRINT ?? "",
-    required: true,
-  },
 });
 
 console.log("[inject-placeholders] All placeholders resolved.");

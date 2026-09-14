@@ -38,7 +38,6 @@ npm run build
 |---|---|---|
 | `SUPABASE_PROJECT_REF` | Supabase project reference | `abcdefghij` |
 | `APPLE_TEAM_ID` | Apple Developer Team ID | `ABCDE12345` |
-| `ANDROID_SHA256_FINGERPRINT` | Android release signing SHA-256 | `AA:BB:CC:...` |
 | `APPLE_BUNDLE_ID` | iOS app bundle ID | `com.alamaby.bikin_stiker` |
 | `NEXT_PUBLIC_IOS_APP_URL` | App Store URL | `https://apps.apple.com/...` |
 | `NEXT_PUBLIC_SITE_URL` | Canonical URL | `https://bikinstiker.com` |
@@ -54,18 +53,16 @@ npm run build
 | `/en/privacy`, `/id/privacy` | Privacy Policy |
 | `/en/terms`, `/id/terms` | Terms of Service |
 | `/.well-known/apple-app-site-association` | Apple App Link association |
-| `/.well-known/assetlinks.json` | Android App Link association |
 | `/r/:token` | Short link → Supabase Edge Function |
 | `/share-claimed/:id` | Share claim callback |
 
 ## Validation (post-deploy)
 
 - iOS: https://branch.io/resources/aasa-validator/
-- Android: https://developers.google.com/digital-asset-links/tools/test-apk-asset-association
 
 ## Production Checklist
 
 1. Set all environment variables in Vercel dashboard before first deploy
-2. Replace all `<PLACEHOLDER>` values in `.well-known` files
-3. Verify App / Universal Links with validators above
+2. Set Apple env vars (`APPLE_TEAM_ID`, `APPLE_BUNDLE_ID`) if an Apple Developer account exists (optional; AASA generates with empty appIDs otherwise)
+3. Verify Universal Links with the validator above (if Apple env is set)
 4. Test share flow: app → share link → recipient opens → app claims reward

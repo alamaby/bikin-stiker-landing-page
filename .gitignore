@@ -51,10 +51,9 @@ yarn-error.log*
 # keep vercel.json.in tracked, never commit generated vercel.json
 /vercel.json
 
-# generated .well-known files (built from *.in templates via prebuild)
-# keep *.in templates tracked, never commit generated output
+# generated .well-known file (built from *.in template via prebuild)
+# keep *.in template tracked, never commit generated output
 public/.well-known/apple-app-site-association
-public/.well-known/assetlinks.json
 
 # typescript
 *.tsbuildinfo
