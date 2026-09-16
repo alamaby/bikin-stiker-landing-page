@@ -8,6 +8,7 @@ interface FaqPageProps {
 export default async function FaqPage({ params }: FaqPageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const isId = locale === "id";
 
   return (
     <div className="py-20">
@@ -17,7 +18,9 @@ export default async function FaqPage({ params }: FaqPageProps) {
             FAQ
           </h1>
           <p className="mt-4 text-lg text-muted-foreground">
-            Everything you need to know about BikinStiker
+            {isId
+              ? "Semua yang perlu Anda ketahui tentang BikinStiker"
+              : "Everything you need to know about BikinStiker"}
           </p>
         </div>
         <div className="mt-12">

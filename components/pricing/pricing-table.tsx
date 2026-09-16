@@ -17,6 +17,9 @@ export function PricingTable() {
 
   return (
     <div className="grid gap-6 md:grid-cols-3">
+      <p className="text-center text-sm text-muted-foreground md:col-span-3">
+        {t("roadmapNote")}
+      </p>
       {tiers.map((tier) => {
         const features = [
           t(`${tier}.feature1`),
@@ -24,6 +27,8 @@ export function PricingTable() {
           t(`${tier}.feature3`),
           t(`${tier}.feature4`),
         ];
+        const badge =
+          tier === "free" ? t("current") : t("roadmap");
 
         return (
           <Card
@@ -39,6 +44,11 @@ export function PricingTable() {
                 {t("plus.popular")}
               </div>
             )}
+            <div className="px-6 pt-4">
+              <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-medium text-muted-foreground">
+                {badge}
+              </span>
+            </div>
             <CardHeader>
               <CardTitle>{t(`${tier}.name`)}</CardTitle>
               <CardDescription>{t(`${tier}.description`)}</CardDescription>

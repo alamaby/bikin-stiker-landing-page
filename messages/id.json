@@ -21,7 +21,7 @@
     },
     "instantShare": {
       "title": "Berbagi Instan",
-      "description": "Bagikan stiker langsung ke WhatsApp, Instagram, Telegram, dan lainnya."
+      "description": "Ekspor paket stiker langsung ke WhatsApp."
     },
     "rewards": {
       "title": "Dapatkan Reward",
@@ -29,7 +29,7 @@
     },
     "collections": {
       "title": "Atur Koleksi",
-      "description": "Buat dan kelola paket stiker tanpa batas sesuai keinginan Anda."
+      "description": "Buat paket berisi 3–30 stiker (2 slot di Free, 20 slot di Plus)."
     },
     "highQuality": {
       "title": "Kualitas HD",
@@ -68,13 +68,16 @@
   "pricing": {
     "title": "Harga Sederhana & Transparan",
     "subtitle": "Mulai gratis, upgrade saat Anda butuh lebih",
+    "current": "Saat ini",
+    "roadmap": "Rencana",
+    "roadmapNote": "Paket berbayar adalah rencana — harga dapat berubah. Aplikasi saat ini gratis.",
     "free": {
       "name": "Gratis",
       "price": "Rp 0",
       "period": "selamanya",
       "description": "Sempurna untuk memulai",
-      "feature1": "20 kredit per bulan",
-      "feature2": "5 paket stiker",
+      "feature1": "5 kredit per bulan",
+      "feature2": "2 paket stiker",
       "feature3": "Model AI dasar",
       "feature4": "Kualitas standar",
       "cta": "Mulai Sekarang"
@@ -84,8 +87,8 @@
       "price": "Rp 45.000",
       "period": "per bulan",
       "description": "Untuk pengguna aktif",
-      "feature1": "100 kredit per bulan",
-      "feature2": "Paket tanpa batas",
+      "feature1": "50 kredit per bulan",
+      "feature2": "20 paket stiker",
       "feature3": "Model AI premium",
       "feature4": "Unduhan kualitas HD",
       "popular": "Paling Populer",
@@ -97,9 +100,9 @@
       "period": "per bulan",
       "description": "Untuk kreator & bisnis",
       "feature1": "300 kredit per bulan",
-      "feature2": "Paket tanpa batas",
+      "feature2": "20+ paket stiker",
       "feature3": "Generasi AI prioritas",
-      "feature4": "Kualitas 4K + akses API",
+      "feature4": "Unduhan kualitas HD",
       "cta": "Pilih Pro"
     }
   },
@@ -124,22 +127,22 @@
     "q1": "Apa itu BikinStiker?",
     "a1": "BikinStiker adalah aplikasi berbasis AI yang memungkinkan Anda membuat stiker kustom dari prompt teks. Jelaskan apa yang Anda inginkan, dan AI kami akan menghasilkan stiker unik yang dapat Anda bagikan ke mana saja.",
     "q2": "Berapa biayanya?",
-    "a2": "BikinStiker memiliki paket gratis dengan 20 kredit per bulan. Kami juga menawarkan paket Plus (Rp 45.000/bulan) dan Pro (Rp 90.000/bulan) dengan lebih banyak kredit dan fitur premium.",
+    "a2": "BikinStiker saat ini gratis: Free dapat 5 kredit/bulan dan Plus 50 kredit/bulan. Paket berbayar Plus (Rp 45.000/bulan) dan Pro (Rp 90.000/bulan) adalah rencana — harga dapat berubah.",
     "q3": "Bagaimana cara mendapatkan kredit?",
-    "a3": "Anda mendapatkan kredit dengan menyelesaikan misi harian seperti membagikan aplikasi, membuat stiker, dan menjaga streaks. Anda juga bisa mendapatkan bonus kredit saat teman menggunakan tautan referral Anda.",
+    "a3": "Anda mendapatkan kredit dari grant bulanan, misi harian seperti membagikan aplikasi, membuat stiker, check-in harian dan streak, plus iklan berhadiah opsional. Berbagi via tautan share Anda bisa mendapatkan bonus kredit.",
     "q4": "Bisakah saya menggunakan stiker secara offline?",
     "a4": "Ya! Paket stiker Anda disimpan secara lokal di perangkat Anda, sehingga Anda dapat mengakses dan menggunakannya bahkan tanpa koneksi internet.",
     "q5": "Apakah data saya bersifat pribadi?",
     "a5": "Prompt dan stiker yang dihasilkan diproses secara aman. Kami tidak menjual data pribadi Anda. Lihat Kebijakan Privasi kami untuk detail lengkap.",
     "q6": "Bagaimana cara upgrade atau membatalkan?",
-    "a6": "Anda dapat mengelola langganan melalui aplikasi atau akun toko aplikasi Anda. Perubahan berlaku di akhir periode penagihan saat ini."
+    "a6": "Aplikasi saat ini gratis tanpa penagihan toko aplikasi. Paket berbayar adalah rencana; saat diluncurkan Anda mengelolanya via aplikasi atau akun toko aplikasi Anda."
   },
   "privacy": {
     "title": "Kebijakan Privasi",
-    "lastUpdated": "Terakhir diperbarui: Juli 2026"
+    "lastUpdated": "Efektif: 3 Juli 2026 | Terakhir diperbarui: 3 Juli 2026"
   },
   "terms": {
     "title": "Ketentuan Layanan",
-    "lastUpdated": "Terakhir diperbarui: Juli 2026"
+    "lastUpdated": "Efektif: 3 Juli 2026 | Terakhir diperbarui: 3 Juli 2026"
   }
 }

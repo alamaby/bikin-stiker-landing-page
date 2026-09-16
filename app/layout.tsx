@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Create unique, AI-powered stickers from text prompts. Share them anywhere, collect rewards, and express yourself.",
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://bikinstiker.com"
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://bikinstiker.alamaby.com"
   ),
 };
 

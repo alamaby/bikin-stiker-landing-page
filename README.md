@@ -1,6 +1,6 @@
 # BikinStiker Landing Page
 
-Marketing site + share-mission infrastructure for [BikinStiker](https://bikinstiker.com).
+Marketing site + share-mission infrastructure for [BikinStiker](https://bikinstiker.alamaby.com).
 
 ## Stack
 
@@ -40,7 +40,7 @@ npm run build
 | `APPLE_TEAM_ID` | Apple Developer Team ID | `ABCDE12345` |
 | `APPLE_BUNDLE_ID` | iOS app bundle ID | `com.alamaby.bikin_stiker` |
 | `NEXT_PUBLIC_IOS_APP_URL` | App Store URL | `https://apps.apple.com/...` |
-| `NEXT_PUBLIC_SITE_URL` | Canonical URL | `https://bikinstiker.com` |
+| `NEXT_PUBLIC_SITE_URL` | Canonical URL | `https://bikinstiker.alamaby.com` |
 | `NEXT_PUBLIC_APP_DOWNLOAD_URL` | Play Store URL | `https://play.google.com/...` |
 
 ## Routes

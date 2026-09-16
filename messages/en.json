@@ -21,7 +21,7 @@
     },
     "instantShare": {
       "title": "Instant Sharing",
-      "description": "Share stickers directly to WhatsApp, Instagram, Telegram, and more."
+      "description": "Export sticker packs directly to WhatsApp."
     },
     "rewards": {
       "title": "Earn Rewards",
@@ -29,7 +29,7 @@
     },
     "collections": {
       "title": "Organize Collections",
-      "description": "Create and manage unlimited sticker packs organized your way."
+      "description": "Create packs of 3–30 stickers (2 slots on Free, 20 slots on Plus)."
     },
     "highQuality": {
       "title": "HD Quality",
@@ -68,13 +68,16 @@
   "pricing": {
     "title": "Simple, Transparent Pricing",
     "subtitle": "Start free, upgrade when you need more",
+    "current": "Current",
+    "roadmap": "Roadmap",
+    "roadmapNote": "Paid plans are roadmap — prices may change. The app is currently free.",
     "free": {
       "name": "Free",
       "price": "$0",
       "period": "forever",
       "description": "Perfect for getting started",
-      "feature1": "20 credits per month",
-      "feature2": "5 sticker packs",
+      "feature1": "5 credits per month",
+      "feature2": "2 sticker packs",
       "feature3": "Basic AI models",
       "feature4": "Standard quality",
       "cta": "Get Started"
@@ -84,8 +87,8 @@
       "price": "$2.99",
       "period": "per month",
       "description": "For power users",
-      "feature1": "100 credits per month",
-      "feature2": "Unlimited packs",
+      "feature1": "50 credits per month",
+      "feature2": "20 sticker packs",
       "feature3": "Premium AI models",
       "feature4": "HD quality downloads",
       "popular": "Most Popular",
@@ -97,9 +100,9 @@
       "period": "per month",
       "description": "For creators and businesses",
       "feature1": "300 credits per month",
-      "feature2": "Unlimited packs",
+      "feature2": "20+ sticker packs",
       "feature3": "Priority AI generation",
-      "feature4": "4K quality + API access",
+      "feature4": "HD quality downloads",
       "cta": "Go Pro"
     }
   },
@@ -124,22 +127,22 @@
     "q1": "What is BikinStiker?",
     "a1": "BikinStiker is an AI-powered app that lets you create custom stickers from text prompts. Describe what you want, and our AI generates unique stickers you can share anywhere.",
     "q2": "How much does it cost?",
-    "a2": "BikinStiker has a free tier with 20 credits per month. We also offer Plus ($2.99/month) and Pro ($5.99/month) plans with more credits and premium features.",
+    "a2": "BikinStiker is currently free: Free gets 5 credits per month and Plus gets 50 credits per month. Plus ($2.99/month) and Pro ($5.99/month) paid plans are on the roadmap — prices may change.",
     "q3": "How do I earn credits?",
-    "a3": "You earn credits by completing daily missions like sharing the app, generating stickers, and maintaining your streak. You can also earn bonus credits when friends use your referral link.",
+    "a3": "You earn credits from monthly grants, daily missions like sharing the app, generating stickers, daily check-ins and streaks, plus optional rewarded ads. Sharing via your share link can earn bonus credits.",
     "q4": "Can I use stickers offline?",
     "a4": "Yes! Your sticker packs are stored locally on your device, so you can access and use them even without an internet connection.",
     "q5": "Is my data private?",
     "a5": "Your prompts and generated stickers are processed securely. We do not sell your personal data. See our Privacy Policy for full details.",
     "q6": "How do I upgrade or cancel?",
-    "a6": "You can manage your subscription through the app or your app store account. Changes take effect at the end of your current billing period."
+    "a6": "The app is currently free with no app-store billing. Paid plans are roadmap; when launched you will manage them via the app or your app-store account."
   },
   "privacy": {
     "title": "Privacy Policy",
-    "lastUpdated": "Last updated: July 2026"
+    "lastUpdated": "Effective: July 3, 2026 | Last updated: July 3, 2026"
   },
   "terms": {
     "title": "Terms of Service",
-    "lastUpdated": "Last updated: July 2026"
+    "lastUpdated": "Effective: July 3, 2026 | Last updated: July 3, 2026"
   }
 }
