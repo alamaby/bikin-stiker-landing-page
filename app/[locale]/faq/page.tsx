@@ -11,7 +11,7 @@ export default async function FaqPage({ params }: FaqPageProps) {
   const isId = locale === "id";
 
   return (
-    <div className="py-20">
+    <div className="bg-background py-16 sm:py-20">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">

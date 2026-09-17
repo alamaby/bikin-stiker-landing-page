@@ -8,29 +8,40 @@ export function HowItWorks() {
   const t = useTranslations("howItWorks");
 
   return (
-    <section className="bg-muted/30 py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="bg-background-1">
+      <div className="mx-auto max-w-[85rem] px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             {t("title")}
           </h2>
           <p className="mt-4 text-muted-foreground">{t("subtitle")}</p>
         </div>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
+        <div className="mt-12">
           {steps.map((step, i) => {
             const Icon = icons[i];
+            const isLast = i === steps.length - 1;
             return (
-              <div key={step} className="relative flex flex-col items-center text-center">
-                {i < steps.length - 1 && (
-                  <div className="absolute left-[calc(50%+2rem)] top-8 hidden w-[calc(100%-4rem)] border-t border-dashed border-border md:block" />
+              <div key={step} className="group relative flex gap-x-5">
+                {!isLast && (
+                  <div
+                    aria-hidden="true"
+                    className="absolute start-8 top-16 bottom-0 w-px bg-border"
+                  />
                 )}
-                <div className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg">
-                  <Icon className="h-7 w-7" />
+                <div className="relative shrink-0">
+                  <span className="flex size-16 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-md">
+                    <Icon className="size-7 shrink-0" />
+                  </span>
+                  <span className="absolute -top-1 -end-1 flex size-6 items-center justify-center rounded-full border border-card-line bg-card text-xs font-bold text-foreground shadow-2xs">
+                    {i + 1}
+                  </span>
                 </div>
-                <div className="mt-6">
-                  <h3 className="text-lg font-semibold">{t(`${step}.title`)}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">
+                <div className="grow pb-10">
+                  <h3 className="text-lg font-semibold text-foreground">
+                    {t(`${step}.title`)}
+                  </h3>
+                  <p className="mt-1 text-sm text-muted-foreground">
                     {t(`${step}.description`)}
                   </p>
                 </div>

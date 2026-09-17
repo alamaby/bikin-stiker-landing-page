@@ -1,16 +1,12 @@
 import { useTranslations } from "next-intl";
 import { Check } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { cn } from "@/lib/utils";
 
 const tiers = ["free", "plus", "pro"] as const;
+
+const DOWNLOAD_URL =
+  process.env.NEXT_PUBLIC_APP_DOWNLOAD_URL ??
+  "https://play.google.com/store/apps/details?id=com.alamaby.bikin_stiker";
 
 export function PricingTable() {
   const t = useTranslations("pricing");
@@ -27,65 +23,72 @@ export function PricingTable() {
           t(`${tier}.feature3`),
           t(`${tier}.feature4`),
         ];
-        const badge =
-          tier === "free" ? t("current") : t("roadmap");
+        const badge = tier === "free" ? t("current") : t("roadmap");
+        const isPopular = tier === "plus";
 
         return (
-          <Card
+          <div
             key={tier}
-            className={
-              tier === "plus"
+            className={cn(
+              "flex flex-col rounded-xl border bg-card text-sm shadow-2xs",
+              isPopular
                 ? "border-primary shadow-lg ring-2 ring-primary/20"
-                : ""
-            }
+                : "border-card-line",
+            )}
           >
-            {tier === "plus" && (
-              <div className="rounded-t-lg bg-primary px-4 py-1.5 text-center text-xs font-semibold text-primary-foreground">
+            {isPopular && (
+              <div className="rounded-t-xl bg-primary px-4 py-1.5 text-center text-xs font-semibold text-primary-foreground">
                 {t("plus.popular")}
               </div>
             )}
-            <div className="px-6 pt-4">
-              <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-medium text-muted-foreground">
+            <div className="px-6 pt-5">
+              <span className="inline-flex items-center gap-x-1.5 rounded-full border border-layer-line bg-layer px-2.5 py-0.5 text-xs font-medium text-layer-foreground">
                 {badge}
               </span>
             </div>
-            <CardHeader>
-              <CardTitle>{t(`${tier}.name`)}</CardTitle>
-              <CardDescription>{t(`${tier}.description`)}</CardDescription>
+            <div className="p-6 pt-4">
+              <h3 className="text-base font-medium text-foreground">
+                {t(`${tier}.name`)}
+              </h3>
+              <p className="mt-1 text-sm text-muted-foreground">
+                {t(`${tier}.description`)}
+              </p>
               <div className="mt-4">
-                <span className="text-3xl font-bold">{t(`${tier}.price`)}</span>
-                <span className="text-muted-foreground"> / {t(`${tier}.period`)}</span>
+                <span className="text-3xl font-bold text-foreground">
+                  {t(`${tier}.price`)}
+                </span>
+                <span className="text-muted-foreground">
+                  {" "}
+                  / {t(`${tier}.period`)}
+                </span>
               </div>
-            </CardHeader>
-            <CardContent>
+            </div>
+            <div className="px-6 pb-6">
               <ul className="space-y-3">
                 {features.map((feature) => (
                   <li key={feature} className="flex items-center gap-2 text-sm">
-                    <Check className="h-4 w-4 flex-shrink-0 text-primary" />
-                    <span>{feature}</span>
+                    <Check className="size-4 shrink-0 text-primary" />
+                    <span className="text-foreground">{feature}</span>
                   </li>
                 ))}
               </ul>
-            </CardContent>
-            <CardFooter>
-              <Button
-                className="w-full"
-                variant={tier === "plus" ? "default" : "outline"}
-                render={
-                  <a
-                    href={
-                      process.env.NEXT_PUBLIC_APP_DOWNLOAD_URL ??
-                      "https://play.google.com/store/apps/details?id=com.alamaby.bikin_stiker"
-                    }
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  />
-                }
+            </div>
+            <div className="mt-auto flex items-center rounded-b-xl border-t border-card-line bg-card-footer/50 p-6">
+              <a
+                href={DOWNLOAD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cn(
+                  "inline-flex w-full items-center justify-center gap-x-2 rounded-lg border px-4 py-2.5 text-sm font-medium focus:outline-hidden disabled:pointer-events-none disabled:opacity-50",
+                  isPopular
+                    ? "border-transparent bg-primary text-primary-foreground hover:bg-primary-hover focus:bg-primary-focus"
+                    : "border-layer-line bg-layer text-layer-foreground shadow-2xs hover:bg-layer-hover focus:bg-layer-focus",
+                )}
               >
                 {t(`${tier}.cta`)}
-              </Button>
-            </CardFooter>
-          </Card>
+              </a>
+            </div>
+          </div>
         );
       })}
     </div>

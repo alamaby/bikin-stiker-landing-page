@@ -1,7 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 interface PrivacyPageProps {
   params: Promise<{ locale: string }>;
@@ -18,10 +17,13 @@ export default async function PrivacyPage({ params }: PrivacyPageProps) {
     <div className="py-20">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <Button variant="ghost" size="sm" render={<Link href={`/${locale}`} />}>
-            <ArrowLeft className="mr-2 h-4 w-4" />
+          <Link
+            href={`/${locale}`}
+            className="inline-flex items-center gap-x-2 rounded-lg px-2.5 py-1.5 text-sm text-navbar-nav-foreground hover:bg-muted hover:text-foreground focus:bg-muted focus:text-foreground focus:outline-hidden"
+          >
+            <ArrowLeft className="size-4 shrink-0" />
             {isId ? "Kembali" : "Back"}
-          </Button>
+          </Link>
         </div>
         <article className="prose prose-stone dark:prose-invert max-w-none">
           {isId ? (

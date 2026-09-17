@@ -1,11 +1,5 @@
 import { useTranslations } from "next-intl";
 import { Zap, Share2, Gift, FolderOpen, Image, Wifi } from "lucide-react";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 
 const icons = {
   aiGeneration: Zap,
@@ -29,10 +23,10 @@ export function FeaturesGrid() {
   ];
 
   return (
-    <section className="py-20" id="features">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="bg-background" id="features">
+      <div className="mx-auto max-w-[85rem] px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             {t("title")}
           </h2>
           <p className="mt-4 text-muted-foreground">{t("subtitle")}</p>
@@ -41,19 +35,20 @@ export function FeaturesGrid() {
           {features.map(({ key, icon }) => {
             const Icon = icons[icon as keyof typeof icons];
             return (
-              <Card key={key} className="border-primary/10 transition-shadow hover:shadow-md">
-                <CardHeader>
-                  <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                    <Icon className="h-5 w-5 text-primary" />
-                  </div>
-                  <CardTitle className="text-lg">{t(`${key}.title`)}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    {t(`${key}.description`)}
-                  </p>
-                </CardContent>
-              </Card>
+              <div
+                key={key}
+                className="flex flex-col rounded-xl border border-card-line bg-card p-6 shadow-2xs transition-shadow hover:shadow-md"
+              >
+                <div className="mb-4 flex size-10 items-center justify-center rounded-lg bg-primary/10">
+                  <Icon className="size-5 shrink-0 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">
+                  {t(`${key}.title`)}
+                </h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  {t(`${key}.description`)}
+                </p>
+              </div>
             );
           })}
         </div>
