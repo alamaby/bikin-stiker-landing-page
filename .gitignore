@@ -58,3 +58,6 @@ public/.well-known/apple-app-site-association
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.vercel
+.env*

@@ -5,9 +5,10 @@ import { useEffect, useState } from "react";
 import { CheckCircle, XCircle, Smartphone } from "lucide-react";
 
 const PLAY_STORE_URL =
-  process.env.NEXT_PUBLIC_APP_DOWNLOAD_URL ??
-  "https://play.google.com/store/apps/details?id=com.alamaby.bikin_stiker";
-const APP_STORE_URL = process.env.NEXT_PUBLIC_IOS_APP_URL ?? "#";
+   process.env.NEXT_PUBLIC_APP_DOWNLOAD_URL ??
+   "https://play.google.com/store/apps/details?id=com.alamaby.bikin_stiker";
+const IOS_URL = process.env.NEXT_PUBLIC_IOS_APP_URL ?? "";
+const hasIosUrl = IOS_URL !== "" && IOS_URL !== "#";
 
 export default function ShareClaimedPage({
   params,
@@ -36,7 +37,11 @@ export default function ShareClaimedPage({
     setTimeout(() => {
       if (Date.now() - start < 1500) {
         const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-        window.location.href = isIOS ? APP_STORE_URL : PLAY_STORE_URL;
+        if (isIOS && hasIosUrl) {
+          window.location.href = IOS_URL;
+        } else {
+          window.location.href = PLAY_STORE_URL;
+        }
       }
     }, 250);
   };
@@ -88,14 +93,16 @@ export default function ShareClaimedPage({
             >
               Android
             </a>
-            <a
-              href={APP_STORE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex flex-1 items-center justify-center gap-x-2 rounded-lg border border-layer-line bg-layer px-4 py-2.5 text-sm font-medium text-layer-foreground shadow-2xs hover:bg-layer-hover focus:bg-layer-focus focus:outline-hidden"
-            >
-              iOS
-            </a>
+            {hasIosUrl ? (
+              <a
+                href={IOS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex flex-1 items-center justify-center gap-x-2 rounded-lg border border-layer-line bg-layer px-4 py-2.5 text-sm font-medium text-layer-foreground shadow-2xs hover:bg-layer-hover focus:bg-layer-focus focus:outline-hidden"
+              >
+                iOS
+              </a>
+            ) : null}
           </div>
         </div>
       </div>
