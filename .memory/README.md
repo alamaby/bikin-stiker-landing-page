@@ -1,11 +1,14 @@
 # Project Memory
 
-Last updated: 2026-09-17 08:45:00 +07:00
+Last updated: 2026-10-15 10:00:00 +07:00
 Format version: 1
 
 ## Current State
 - Landing page BikinStiker (Next.js 16 App Router + Tailwind v4 + next-intl en/id) sudah dimigrasi penuh ke Preline UI 4.2.0 (Opsi B). shadcn/Base UI dihapus.
 - Verifikasi: lint bersih, `tsc --noEmit` OK, `next build` OK (14 halaman static), `next start` semua route 200.
+- **Current work (10:00):** `/en|id/terms` disinkron ke ToS app v2026-10-15
+  (lisensi terbatas upstream, atribusi Pixazo Free, IP clearance,
+  disclosure AI). Lint + tsc bersih; BELUM deploy Vercel.
 
 ## Active Decisions
 - Opsi B full Preline; `shadcn`, `@base-ui/react`, `class-variance-authority`, `tw-animate-css` di-uninstall; `components/ui/*` + `components.json` dihapus.
@@ -22,4 +25,5 @@ Format version: 1
 - Tidak ada (`PROJECT_MEMORY.md` tidak pernah ada).
 
 ## Recent Entries
+- [2026-10-15 — terms commercial-rights sync](./2026-10-15/100000-terms-commercial-rights-sync.md)
 - [2026-09-17 — full revamp ke Preline UI](./2026-09-17/084500-preline-revamp.md)

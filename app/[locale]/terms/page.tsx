@@ -30,7 +30,7 @@ export default async function TermsPage({ params }: TermsPageProps) {
             <>
               <h1>Ketentuan Layanan</h1>
               <p className="text-muted-foreground">
-                Tanggal efektif: 3 Juli 2026 | Terakhir diperbarui: 3 Juli 2026
+                Tanggal efektif: 3 Juli 2026 | Terakhir diperbarui: 15 Oktober 2026
                 <br />
                 Aplikasi: BikinStiker
                 <br />
@@ -103,10 +103,19 @@ export default async function TermsPage({ params }: TermsPageProps) {
                 Pilih preset, masukkan prompt, opsional caption (maks 10
                 karakter, atas/bawah). Server dapat meningkatkan prompt via
                 model reasoning teks (Mistral) lalu membuat gambar via Pixazo
-                (Flux-1-Schnell, SDXL Base 1.0), OpenRouter, Gemini, atau
-                Pollinations sebagai fallback. Hasil gaya die-cut untuk
-                kompatibilitas WhatsApp. Hasil AI dapat bervariasi; tinjau
-                sebelum dipakai/dibagikan.
+                Flux-1-Schnell sebagai utama dan Pollinations Flux sebagai
+                fallback (rantai aktif Oktober 2026; endpoint SDXL Base 1.0,
+                OpenRouter, dan Gemini saat ini dinonaktifkan, varian
+                non-komersial/dev tetap dinonaktifkan). Setiap generasi
+                mencatat metadata provider/model untuk ketertelusuran. Hasil
+                gaya die-cut untuk kompatibilitas WhatsApp. Hasil AI dapat
+                bervariasi dan tidak dijamin unik, orisinal, atau dilindungi
+                hak cipta; beberapa pengguna dapat menerima output mirip.
+                Model dasar (FLUX.1-schnell, Apache-2.0) mengizinkan
+                komersial, tetapi ketentuan penyedia API yang lebih
+                restriktif yang menang; bila penyedia mewajibkan atribusi
+                (Pixazo Free), wajib dipertahankan. Tinjau sebelum
+                dipakai/dibagikan.
               </p>
               <p>
                 Prompt/caption dilarang ilegal, berbahaya, kebencian, eksplisit
@@ -118,8 +127,9 @@ export default async function TermsPage({ params }: TermsPageProps) {
               <h2>6. Konten dan Lisensi</h2>
               <ul>
                 <li>Prompt/caption tetap milik Anda; Anda memberi lisensi terbatas non-eksklusif untuk memprosesnya demi pembuatan stiker.</li>
-                <li>Stiker hasil AI: lisensi non-eksklusif, sedunia, bebas royalti untuk dipakai, disalin, dimodifikasi, dan didistribusikan untuk pribadi dan komersial, tunduk hukum berlaku termasuk kewajiban pengungkapan konten AI.</li>
-                <li>Lisensi tidak mencakup model AI, deskriptor gaya, atau teknologi dasar Aplikasi.</li>
+                <li>Stiker hasil AI: lisensi terbatas, non-eksklusif, sedunia, bebas royalti, dapat dicabut, tidak dapat dialihkan/disublisensikan, untuk pribadi dan komersial terbatas — sepanjang diizinkan penyedia/model tiap generasi (konten Pixazo Free tetap milik penyedia). Tanpa jaminan hak cipta, orisinalitas, atau eksklusivitas (UU Hak Cipta 28/2014 mensyaratkan kontribusi intelektual manusia).</li>
+                <li>Klirens KI tanggung jawab Anda sebelum komersial: dilarang memakai merek, logo, karakter berhak cipta, atau kemiripan orang lain tanpa izin; periksa output, bukan hanya prompt. Patuhi kewajiban pengungkapan konten AI yang berlaku.</li>
+                <li>Lisensi tidak mencakup model AI, data pelatihan, deskriptor gaya, atau teknologi dasar Aplikasi.</li>
               </ul>
 
               <h2>7. Paket Stiker dan Ekspor WhatsApp</h2>
@@ -202,7 +212,7 @@ export default async function TermsPage({ params }: TermsPageProps) {
             <>
               <h1>Terms of Service</h1>
               <p className="text-muted-foreground">
-                Effective Date: July 3, 2026 | Last Updated: July 3, 2026
+                Effective Date: July 3, 2026 | Last Updated: October 15, 2026
                 <br />
                 App: BikinStiker
                 <br />
@@ -272,9 +282,17 @@ export default async function TermsPage({ params }: TermsPageProps) {
                 Pick a preset, enter a prompt, optionally add a caption (max 10
                 chars, top/bottom). Our server may enhance prompts with a
                 text-only reasoning model (Mistral), then generate via Pixazo
-                (Flux-1-Schnell, SDXL Base 1.0), OpenRouter, Gemini, or
-                Pollinations fallback. Die-cut style for WhatsApp. AI output
-                varies; review before use/share.
+                Flux-1-Schnell as primary and Pollinations Flux as fallback
+                (active chain, October 2026; SDXL Base 1.0, OpenRouter, and
+                Gemini endpoints currently disabled, non-commercial/dev
+                variants stay disabled). Each generation logs provider/model
+                metadata for traceability. Die-cut style for WhatsApp. AI
+                output varies and is not guaranteed unique, original, or
+                copyright-protected; users may receive similar outputs. The
+                base model (FLUX.1-schnell, Apache-2.0) allows commercial use,
+                but the more restrictive API provider terms prevail; retain
+                attribution where required (Pixazo Free). Review before
+                use/share.
               </p>
               <p>
                 Prompts/captions must not be illegal, harmful, hateful, sexually
@@ -285,8 +303,9 @@ export default async function TermsPage({ params }: TermsPageProps) {
               <h2>6. Content and License</h2>
               <ul>
                 <li>Your prompts stay yours; you grant a limited non-exclusive license to process them for generation.</li>
-                <li>Generated stickers: non-exclusive, worldwide, royalty-free license to use, copy, modify, and distribute for personal and commercial purposes, subject to law incl. AI-content disclosure duties.</li>
-                <li>No license to AI models, style descriptors, or underlying tech.</li>
+                <li>Generated stickers: limited, non-exclusive, worldwide, royalty-free, revocable, non-transferable, non-sublicensable license for personal and limited commercial use — to the extent the upstream provider/model allows per generation (Pixazo Free content stays provider-owned). No warranty of copyright, originality, or exclusivity.</li>
+                <li>IP clearance is yours before any commercial use: no third-party marks, logos, copyrighted characters, or likeness without permission; check the output, not just the prompt. Follow applicable AI-content disclosure duties.</li>
+                <li>No license to AI models, training data, style descriptors, or underlying tech.</li>
               </ul>
 
               <h2>7. Packs and WhatsApp Export</h2>
