@@ -30,7 +30,7 @@ export default async function PrivacyPage({ params }: PrivacyPageProps) {
             <>
               <h1>Kebijakan Privasi</h1>
               <p className="text-muted-foreground">
-                Tanggal efektif: 3 Juli 2026 | Terakhir diperbarui: 3 Juli 2026
+                Tanggal efektif: 3 Juli 2026 | Terakhir diperbarui: 15 Oktober 2026
                 <br />
                 Aplikasi: BikinStiker
                 <br />
@@ -143,14 +143,17 @@ export default async function PrivacyPage({ params }: PrivacyPageProps) {
                 <li><strong>Supabase</strong> — autentikasi, basis data, storage, serverless functions.</li>
                 <li><strong>Google (AdMob)</strong> — rewarded/banner ads, pencegahan fraud.</li>
                 <li><strong>Google Sign-In</strong> — OAuth (bila tersedia).</li>
-                <li><strong>Pixazo</strong> — generasi gambar sisi server (Flux-1-Schnell, SDXL Base 1.0).</li>
-                <li><strong>OpenRouter / Gemini / Pollinations</strong> — fallback generasi gambar sisi server.</li>
+                <li><strong>Pixazo</strong> — generasi gambar sisi server (Flux-1-Schnell; tier gratis).</li>
+                <li><strong>Gemini</strong> — fallback kuota gratis sisi server; Google dapat memakai prompt/output untuk meningkatkan layanannya (termasuk review manusia) — jangan kirim data sensitif. OpenRouter / Pollinations — fallback lain.</li>
                 <li><strong>Mistral</strong> — peningkatan prompt teks saja (bukan generasi gambar).</li>
                 <li><strong>WhatsApp (di perangkat)</strong> — impor paket stiker.</li>
               </ul>
               <p>
                 Kunci API penyedia AI tidak pernah diekspos ke aplikasi; hanya
-                dikelola di server backend kami.
+                dikelola di server backend kami. Penyedia kuota gratis dapat
+                memakai prompt/output untuk pelatihan/pengingkatan AI;
+                penarikan persetujuan tidak menarik data yang sudah terkirim
+                ke penyedia.
               </p>
 
               <h2>5. Retensi Data</h2>
@@ -218,7 +221,7 @@ export default async function PrivacyPage({ params }: PrivacyPageProps) {
             <>
               <h1>Privacy Policy</h1>
               <p className="text-muted-foreground">
-                Effective Date: July 3, 2026 | Last Updated: July 3, 2026
+                Effective Date: July 3, 2026 | Last Updated: October 15, 2026
                 <br />
                 App: BikinStiker
                 <br />
@@ -328,14 +331,16 @@ export default async function PrivacyPage({ params }: PrivacyPageProps) {
                 <li><strong>Supabase</strong> — auth, database, storage, serverless functions.</li>
                 <li><strong>Google (AdMob)</strong> — rewarded/banner ads, fraud prevention.</li>
                 <li><strong>Google Sign-In</strong> — OAuth (when available).</li>
-                <li><strong>Pixazo</strong> — server-side generation (Flux-1-Schnell, SDXL Base 1.0).</li>
-                <li><strong>OpenRouter / Gemini / Pollinations</strong> — server-side image fallbacks.</li>
+                <li><strong>Pixazo</strong> — server-side generation (Flux-1-Schnell; free tier).</li>
+                <li><strong>Gemini</strong> — unpaid-quota server-side fallback; Google may use prompts/outputs to improve its services (incl. human review) — do not send sensitive data. OpenRouter / Pollinations — other fallbacks.</li>
                 <li><strong>Mistral</strong> — text-only prompt enhancement.</li>
                 <li><strong>WhatsApp (on-device)</strong> — sticker pack import.</li>
               </ul>
               <p>
                 AI provider API keys are never exposed to the app; they live
-                only on our backend servers.
+                only on our backend servers. Free-quota providers may use
+                prompts/outputs for AI training/improvement; withdrawing
+                consent cannot retract data already sent to a provider.
               </p>
 
               <h2>5. Data Retention</h2>
